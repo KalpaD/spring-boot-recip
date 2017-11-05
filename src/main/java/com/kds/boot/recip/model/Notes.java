@@ -16,5 +16,6 @@ public class Notes {
 
     @OneToOne // No cascade type since notes own by recipe.
     private Recipe recipe;
+    @Lob
     private String recipeNotes;
 }
